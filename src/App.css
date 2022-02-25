@@ -64,6 +64,11 @@
 	flex-direction: column;
 }
 
+.home-container h2 {
+	margin-top: 15vh;
+	margin-bottom: 10vh;
+}
+
 /* Footer */
 
 footer {

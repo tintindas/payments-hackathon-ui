@@ -3,6 +3,10 @@ import Card from '../components/Card'
 const Home = () => {
 	return (
 		<div className='home-container'>
+			<h2>Home</h2>
+			<Card content={['Payments', 'Test']} />
+			<Card content={['Payments', 'Test']} />
+			<Card content={['Payments', 'Test']} />
 			<Card content={['Payments', 'Test']} />
 		</div>
 	)
