@@ -56,7 +56,7 @@
 }
 
 /* Home */
-.home-container {
+.container {
 	width: 100vw;
 	display: flex;
 	align-items: center;
@@ -64,9 +64,23 @@
 	flex-direction: column;
 }
 
-.home-container h2 {
+.container h2 {
 	margin-top: 15vh;
 	margin-bottom: 10vh;
+}
+
+/* Payment */
+.payment h2 {
+	margin-bottom: 5vh;
+}
+
+.payment label {
+	text-align: start;
+}
+
+.payment input {
+	height: 3vh;
+	margin-bottom: 6vh;
 }
 
 /* Footer */
