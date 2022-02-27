@@ -44,7 +44,7 @@ h2 {
 	margin-bottom: 10px;
 }
 
-.login-container input {
+input {
 	border-radius: 20px;
 	outline: none;
 	border: none;
@@ -92,6 +92,10 @@ h2 {
 	font-size: large;
 }
 
+.card p:nth-child(2) {
+	color: rgb(71, 69, 69);
+}
+
 /* Home */
 .container {
 	width: 100vw;
@@ -119,6 +123,27 @@ h2 {
 .payment input {
 	height: 3vh;
 	margin-bottom: 6vh;
+}
+
+/* Transact */
+
+.transact .heading {
+	margin-top: 8vh;
+	margin-bottom: 2vh;
+}
+
+.transact label p {
+	text-align: start;
+}
+
+.transact form {
+	margin-bottom: 5vh;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 /* Footer */
