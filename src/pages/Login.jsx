@@ -1,4 +1,7 @@
+import { useNavigate } from 'react-router-dom'
+
 const Login = () => {
+	const navigate = useNavigate()
 	return (
 		<main class='login-container'>
 			<h2>Login</h2>
@@ -13,7 +16,14 @@ const Login = () => {
 						<input type='password' name='password' id='password' />
 					</label>
 				</fieldset>
-				<button>Submit</button>
+				<button
+					class='btn'
+					onClick={() => {
+						navigate('/home')
+					}}
+				>
+					Submit
+				</button>
 			</form>
 		</main>
 	)

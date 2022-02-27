@@ -4,10 +4,10 @@ const Home = () => {
 	return (
 		<div className='container'>
 			<h2>Home</h2>
-			<Card content={['Payments', 'Test']} />
-			<Card content={['Payments', 'Test']} />
-			<Card content={['Payments', 'Test']} />
-			<Card content={['Payments', 'Test']} />
+			<Card content={['Payments']} />
+			<Card content={['Payments']} />
+			<Card content={['Payments']} />
+			<Card content={['Payments']} />
 		</div>
 	)
 }
