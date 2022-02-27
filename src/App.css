@@ -84,6 +84,8 @@ h2 {
 	box-sizing: border-box;
 	padding: 0 5vw;
 	justify-content: space-between;
+	background-color: white;
+	cursor: pointer;
 }
 
 .card p {

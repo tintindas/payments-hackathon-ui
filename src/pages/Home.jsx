@@ -4,7 +4,7 @@ const Home = () => {
 	return (
 		<div className='container'>
 			<h2>Home</h2>
-			<Card content={['Payments']} />
+			<Card content={['Payments']} route='/payments' />
 			<Card content={['Payments']} />
 			<Card content={['Payments']} />
 			<Card content={['Payments']} />
