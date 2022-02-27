@@ -101,15 +101,16 @@ h2 {
 	flex-direction: column;
 }
 
-.container h2 {
-	margin-top: 15vh;
-	margin-bottom: 10vh;
+.container .heading {
+	margin-top: 10vh;
+	margin-bottom: 8vh;
+}
+
+.heading p {
+	color: rgb(109, 105, 105);
 }
 
 /* Payment */
-.payment h2 {
-	margin-bottom: 5vh;
-}
 
 .payment label {
 	text-align: start;
