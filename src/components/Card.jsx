@@ -1,4 +1,12 @@
+import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
+
+const cardVariant = {
+	hover: {
+		scale: 1.05,
+		boxShadow: '0 0 20px rgba(0, 0, 0, 0.226)'
+	}
+}
 
 const Card = ({ content, route }) => {
 	const navigate = useNavigate()
@@ -10,11 +18,16 @@ const Card = ({ content, route }) => {
 	}
 
 	return (
-		<div className='card' onClick={handleClick}>
+		<motion.div
+			className='card'
+			onClick={handleClick}
+			whileHover='hover'
+			variants={cardVariant}
+		>
 			{content.map((item, index) => {
 				return <p key={index}>{item}</p>
 			})}
-		</div>
+		</motion.div>
 	)
 }
 
