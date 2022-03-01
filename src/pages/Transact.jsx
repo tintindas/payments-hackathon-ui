@@ -1,6 +1,14 @@
+import { useEffect, useState } from 'react'
 import Card from '../components/Card'
 
 const Transact = () => {
+	const [footprint, setFootprint] = useState([])
+	useEffect(() => {
+		const data = 0.4813126944
+		const random = 1.68
+		setFootprint([data.toFixed(2), (random * data).toFixed(2)])
+	}, [])
+
 	return (
 		<div className='container transact'>
 			<div className='heading'>
@@ -17,8 +25,15 @@ const Transact = () => {
 					<input type='number' />
 				</label>
 			</form>
-			<Card content={['Standard', '3g CO₂']} />
-			<Card content={['CHAPS', '5g CO₂']} />
+			<div className='good'>
+				<Card content={['Standard', `${footprint[0]}g CO₂`]} />
+			</div>
+			<details>
+				<summary>Other payment methods</summary>
+				<div className='good'>
+					<Card content={['CHAPS', `${footprint[1]}g CO₂`]} />
+				</div>
+			</details>
 		</div>
 	)
 }

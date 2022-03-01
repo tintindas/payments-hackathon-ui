@@ -135,9 +135,31 @@ input {
 .transact label p {
 	text-align: start;
 }
+.transact details {
+	margin-top: 2vh;
+	width: 100%;
+	text-align: start;
+}
+
+.transact summary {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.transact details .card {
+	margin: 2vh auto;
+}
 
 .transact form {
 	margin-bottom: 5vh;
+}
+
+.transact .good {
+	width: 100%;
+}
+
+.transact .good .card {
+	margin: 2vh auto;
 }
 
 input::-webkit-outer-spin-button,
