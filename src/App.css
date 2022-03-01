@@ -128,7 +128,7 @@ input {
 /* Transact */
 
 .transact .heading {
-	margin-top: 8vh;
+	margin-top: 3vh;
 	margin-bottom: 2vh;
 }
 
@@ -160,6 +160,12 @@ input {
 
 .transact .good .card {
 	margin: 2vh auto;
+}
+
+.transact .last {
+	position: absolute;
+	bottom: 5vh;
+	font-size: small;
 }
 
 input::-webkit-outer-spin-button,

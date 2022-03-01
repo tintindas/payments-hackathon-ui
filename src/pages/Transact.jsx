@@ -1,5 +1,14 @@
+import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import Card from '../components/Card'
+import { Link } from 'react-router-dom'
+import ReactTooltip from 'react-tooltip'
+
+const cardVariant = {
+	hover: {
+		scale: 1.05,
+		boxShadow: '0 0 20px rgba(0, 0, 0, 0.226)'
+	}
+}
 
 const Transact = () => {
 	const [footprint, setFootprint] = useState([])
@@ -25,15 +34,22 @@ const Transact = () => {
 					<input type='number' />
 				</label>
 			</form>
-			<div className='good'>
-				<Card content={['Standard', `${footprint[0]}g CO₂`]} />
-			</div>
+			<motion.div className='card' whileHover='hover' variants={cardVariant}>
+				<p data-tip='hello'>Standard</p>
+				<p data-tip='carbon'>{`${footprint[0]}g CO₂`}</p>
+				<ReactTooltip />
+			</motion.div>
 			<details>
 				<summary>Other payment methods</summary>
-				<div className='good'>
-					<Card content={['CHAPS', `${footprint[1]}g CO₂`]} />
-				</div>
+				<motion.div className='card' whileHover='hover' variants={cardVariant}>
+					<p data-tip='hello 2'>CHAPS</p>
+					<p data-tip='carbon 2'>{`${footprint[1]}g CO₂`}</p>
+				</motion.div>
 			</details>
+
+			<div className='last'>
+				Learn more about our climate goals <Link to='/carbon'>here</Link>
+			</div>
 		</div>
 	)
 }
