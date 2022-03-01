@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ReactTooltip from 'react-tooltip'
+import { animation } from '../animations/animations'
 
 const cardVariant = {
 	hover: {
@@ -19,7 +20,13 @@ const Transact = () => {
 	}, [])
 
 	return (
-		<div className='container transact'>
+		<motion.div
+			className='container transact'
+			variants={animation}
+			initial='initial'
+			animate='animate'
+			exit='exit'
+		>
 			<div className='heading'>
 				<h2>Transact</h2>
 				<p>Choose your transaction type</p>
@@ -54,7 +61,7 @@ const Transact = () => {
 			<div className='last'>
 				Learn more about our climate efforts <Link to='/carbon'>here</Link>.
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 
